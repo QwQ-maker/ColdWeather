@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:andorid="http://schemas.android.com/apk/res/android"
+    andorid:layout_width="match_parent"
+    andorid:layout_height="match_parent"
+    andorid:background="@mipmap/bg">
+    <RelativeLayout
+        andorid:id="@+id/main_button_layout"
+        andorid:layout_width="match_parent"
+        andorid:layout_height="50dp"
+        andorid:layout_alignParentBottom="true">
+
+        <ImageView
+            andorid:id="@+id/main_iv_add"
+            andorid:layout_width="50dp"
+            andorid:layout_height="match_parent"
+            andorid:src="@mipmap/icon_add"
+            andorid:layout_alignParentRight="true"/>
+        <ImageView
+            andorid:id="@+id/main_iv_more"
+            andorid:layout_width="wrap_content"
+            andorid:layout_height="match_parent"
+            andorid:src="@mipmap/icon_back"
+            andorid:layout_alignParentLeft="true"
+            />
+        <LinearLayout
+            andorid:id="@+id/main_layout_point"
+            andorid:layout_width="wrap_content"
+            andorid:layout_height="wrap_content"
+            andorid:orientation="horizontal"
+            andorid:layout_centerInParent="true">
+        </LinearLayout>
+    </RelativeLayout>
+    <androidx.viewpager.widget.ViewPager
+        andorid:id="@+id/main_vp"
+        andorid:layout_width="match_parent"
+        andorid:layout_height="match_parent"
+        andorid:layout_above="@id/main_button_layout">
+    </androidx.viewpager.widget.ViewPager>
+
+
+</RelativeLayout>
